@@ -5,7 +5,7 @@
 -- Dumped from database version 17.4 (Debian 17.4-1.pgdg120+2)
 -- Dumped by pg_dump version 17.4
 
--- Started on 2025-03-08 02:08:47 UTC
+-- Started on 2025-03-08 02:31:29 UTC
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,13 +19,9 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
 --
 -- TOC entry 220 (class 1259 OID 24590)
--- Name: category; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: category; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.category (
@@ -36,11 +32,9 @@ CREATE TABLE public.category (
 );
 
 
-ALTER TABLE public.category OWNER TO preprod_user;
-
 --
 -- TOC entry 219 (class 1259 OID 24589)
--- Name: category_category_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: category_category_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.category_category_id_seq
@@ -52,12 +46,10 @@ CREATE SEQUENCE public.category_category_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.category_category_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3438 (class 0 OID 0)
+-- TOC entry 3426 (class 0 OID 0)
 -- Dependencies: 219
--- Name: category_category_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: category_category_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.category_category_id_seq OWNED BY public.category.category_id;
@@ -65,7 +57,7 @@ ALTER SEQUENCE public.category_category_id_seq OWNED BY public.category.category
 
 --
 -- TOC entry 228 (class 1259 OID 24643)
--- Name: discount; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: discount; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.discount (
@@ -82,11 +74,9 @@ CREATE TABLE public.discount (
 );
 
 
-ALTER TABLE public.discount OWNER TO preprod_user;
-
 --
 -- TOC entry 227 (class 1259 OID 24642)
--- Name: discount_discount_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: discount_discount_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.discount_discount_id_seq
@@ -98,12 +88,10 @@ CREATE SEQUENCE public.discount_discount_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.discount_discount_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3439 (class 0 OID 0)
+-- TOC entry 3427 (class 0 OID 0)
 -- Dependencies: 227
--- Name: discount_discount_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: discount_discount_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.discount_discount_id_seq OWNED BY public.discount.discount_id;
@@ -111,7 +99,7 @@ ALTER SEQUENCE public.discount_discount_id_seq OWNED BY public.discount.discount
 
 --
 -- TOC entry 224 (class 1259 OID 24615)
--- Name: orders; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: orders; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.orders (
@@ -123,11 +111,9 @@ CREATE TABLE public.orders (
 );
 
 
-ALTER TABLE public.orders OWNER TO preprod_user;
-
 --
 -- TOC entry 223 (class 1259 OID 24614)
--- Name: orders_order_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: orders_order_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.orders_order_id_seq
@@ -139,12 +125,10 @@ CREATE SEQUENCE public.orders_order_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.orders_order_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3440 (class 0 OID 0)
+-- TOC entry 3428 (class 0 OID 0)
 -- Dependencies: 223
--- Name: orders_order_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: orders_order_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.orders_order_id_seq OWNED BY public.orders.order_id;
@@ -152,7 +136,7 @@ ALTER SEQUENCE public.orders_order_id_seq OWNED BY public.orders.order_id;
 
 --
 -- TOC entry 222 (class 1259 OID 24602)
--- Name: product; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: product; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.product (
@@ -165,11 +149,9 @@ CREATE TABLE public.product (
 );
 
 
-ALTER TABLE public.product OWNER TO preprod_user;
-
 --
 -- TOC entry 221 (class 1259 OID 24601)
--- Name: product_product_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: product_product_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.product_product_id_seq
@@ -181,12 +163,10 @@ CREATE SEQUENCE public.product_product_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.product_product_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3441 (class 0 OID 0)
+-- TOC entry 3429 (class 0 OID 0)
 -- Dependencies: 221
--- Name: product_product_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: product_product_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.product_product_id_seq OWNED BY public.product.product_id;
@@ -194,7 +174,7 @@ ALTER SEQUENCE public.product_product_id_seq OWNED BY public.product.product_id;
 
 --
 -- TOC entry 226 (class 1259 OID 24629)
--- Name: shipment; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: shipment; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.shipment (
@@ -205,11 +185,9 @@ CREATE TABLE public.shipment (
 );
 
 
-ALTER TABLE public.shipment OWNER TO preprod_user;
-
 --
 -- TOC entry 225 (class 1259 OID 24628)
--- Name: shipment_shipment_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: shipment_shipment_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.shipment_shipment_id_seq
@@ -221,12 +199,10 @@ CREATE SEQUENCE public.shipment_shipment_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.shipment_shipment_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3442 (class 0 OID 0)
+-- TOC entry 3430 (class 0 OID 0)
 -- Dependencies: 225
--- Name: shipment_shipment_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: shipment_shipment_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.shipment_shipment_id_seq OWNED BY public.shipment.shipment_id;
@@ -234,7 +210,7 @@ ALTER SEQUENCE public.shipment_shipment_id_seq OWNED BY public.shipment.shipment
 
 --
 -- TOC entry 218 (class 1259 OID 24578)
--- Name: users; Type: TABLE; Schema: public; Owner: preprod_user
+-- Name: users; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.users (
@@ -246,11 +222,9 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO preprod_user;
-
 --
 -- TOC entry 217 (class 1259 OID 24577)
--- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: preprod_user
+-- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.users_user_id_seq
@@ -262,12 +236,10 @@ CREATE SEQUENCE public.users_user_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.users_user_id_seq OWNER TO preprod_user;
-
 --
--- TOC entry 3443 (class 0 OID 0)
+-- TOC entry 3431 (class 0 OID 0)
 -- Dependencies: 217
--- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: preprod_user
+-- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
@@ -275,7 +247,7 @@ ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
 
 --
 -- TOC entry 3237 (class 2604 OID 24593)
--- Name: category category_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: category category_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.category ALTER COLUMN category_id SET DEFAULT nextval('public.category_category_id_seq'::regclass);
@@ -283,7 +255,7 @@ ALTER TABLE ONLY public.category ALTER COLUMN category_id SET DEFAULT nextval('p
 
 --
 -- TOC entry 3247 (class 2604 OID 24646)
--- Name: discount discount_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: discount discount_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.discount ALTER COLUMN discount_id SET DEFAULT nextval('public.discount_discount_id_seq'::regclass);
@@ -291,7 +263,7 @@ ALTER TABLE ONLY public.discount ALTER COLUMN discount_id SET DEFAULT nextval('p
 
 --
 -- TOC entry 3241 (class 2604 OID 24618)
--- Name: orders order_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: orders order_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.orders ALTER COLUMN order_id SET DEFAULT nextval('public.orders_order_id_seq'::regclass);
@@ -299,7 +271,7 @@ ALTER TABLE ONLY public.orders ALTER COLUMN order_id SET DEFAULT nextval('public
 
 --
 -- TOC entry 3239 (class 2604 OID 24605)
--- Name: product product_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: product product_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.product ALTER COLUMN product_id SET DEFAULT nextval('public.product_product_id_seq'::regclass);
@@ -307,7 +279,7 @@ ALTER TABLE ONLY public.product ALTER COLUMN product_id SET DEFAULT nextval('pub
 
 --
 -- TOC entry 3244 (class 2604 OID 24632)
--- Name: shipment shipment_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: shipment shipment_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.shipment ALTER COLUMN shipment_id SET DEFAULT nextval('public.shipment_shipment_id_seq'::regclass);
@@ -315,129 +287,15 @@ ALTER TABLE ONLY public.shipment ALTER COLUMN shipment_id SET DEFAULT nextval('p
 
 --
 -- TOC entry 3235 (class 2604 OID 24581)
--- Name: users user_id; Type: DEFAULT; Schema: public; Owner: preprod_user
+-- Name: users user_id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.users_user_id_seq'::regclass);
 
 
 --
--- TOC entry 3424 (class 0 OID 24590)
--- Dependencies: 220
--- Data for Name: category; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.category (category_id, category_name, description, created_at) FROM stdin;
-\.
-
-
---
--- TOC entry 3432 (class 0 OID 24643)
--- Dependencies: 228
--- Data for Name: discount; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.discount (discount_id, product_id, discount_code, discount_percentage, valid_from, valid_to, max_uses, is_active, created_at, updated_at) FROM stdin;
-\.
-
-
---
--- TOC entry 3428 (class 0 OID 24615)
--- Dependencies: 224
--- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.orders (order_id, user_id, order_date, total_amount, status) FROM stdin;
-\.
-
-
---
--- TOC entry 3426 (class 0 OID 24602)
--- Dependencies: 222
--- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.product (product_id, product_name, price, category_id, stock, created_at) FROM stdin;
-\.
-
-
---
--- TOC entry 3430 (class 0 OID 24629)
--- Dependencies: 226
--- Data for Name: shipment; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.shipment (shipment_id, order_id, shipment_date, delivery_status) FROM stdin;
-\.
-
-
---
--- TOC entry 3422 (class 0 OID 24578)
--- Dependencies: 218
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: preprod_user
---
-
-COPY public.users (user_id, username, email, password, created_at) FROM stdin;
-\.
-
-
---
--- TOC entry 3444 (class 0 OID 0)
--- Dependencies: 219
--- Name: category_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.category_category_id_seq', 1, false);
-
-
---
--- TOC entry 3445 (class 0 OID 0)
--- Dependencies: 227
--- Name: discount_discount_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.discount_discount_id_seq', 1, false);
-
-
---
--- TOC entry 3446 (class 0 OID 0)
--- Dependencies: 223
--- Name: orders_order_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.orders_order_id_seq', 1, false);
-
-
---
--- TOC entry 3447 (class 0 OID 0)
--- Dependencies: 221
--- Name: product_product_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.product_product_id_seq', 1, false);
-
-
---
--- TOC entry 3448 (class 0 OID 0)
--- Dependencies: 225
--- Name: shipment_shipment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.shipment_shipment_id_seq', 1, false);
-
-
---
--- TOC entry 3449 (class 0 OID 0)
--- Dependencies: 217
--- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: preprod_user
---
-
-SELECT pg_catalog.setval('public.users_user_id_seq', 1, false);
-
-
---
 -- TOC entry 3259 (class 2606 OID 24600)
--- Name: category category_category_name_key; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: category category_category_name_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.category
@@ -446,7 +304,7 @@ ALTER TABLE ONLY public.category
 
 --
 -- TOC entry 3261 (class 2606 OID 24598)
--- Name: category category_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: category category_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.category
@@ -455,7 +313,7 @@ ALTER TABLE ONLY public.category
 
 --
 -- TOC entry 3269 (class 2606 OID 24654)
--- Name: discount discount_discount_code_key; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: discount discount_discount_code_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.discount
@@ -464,7 +322,7 @@ ALTER TABLE ONLY public.discount
 
 --
 -- TOC entry 3271 (class 2606 OID 24652)
--- Name: discount discount_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: discount discount_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.discount
@@ -473,7 +331,7 @@ ALTER TABLE ONLY public.discount
 
 --
 -- TOC entry 3265 (class 2606 OID 24622)
--- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.orders
@@ -482,7 +340,7 @@ ALTER TABLE ONLY public.orders
 
 --
 -- TOC entry 3263 (class 2606 OID 24608)
--- Name: product product_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: product product_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.product
@@ -491,7 +349,7 @@ ALTER TABLE ONLY public.product
 
 --
 -- TOC entry 3267 (class 2606 OID 24636)
--- Name: shipment shipment_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: shipment shipment_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.shipment
@@ -500,7 +358,7 @@ ALTER TABLE ONLY public.shipment
 
 --
 -- TOC entry 3253 (class 2606 OID 24588)
--- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users
@@ -509,7 +367,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3255 (class 2606 OID 24584)
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users
@@ -518,7 +376,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3257 (class 2606 OID 24586)
--- Name: users users_username_key; Type: CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: users users_username_key; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.users
@@ -527,7 +385,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3275 (class 2606 OID 24655)
--- Name: discount fk_product; Type: FK CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: discount fk_product; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.discount
@@ -536,7 +394,7 @@ ALTER TABLE ONLY public.discount
 
 --
 -- TOC entry 3273 (class 2606 OID 24623)
--- Name: orders orders_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: orders orders_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.orders
@@ -545,7 +403,7 @@ ALTER TABLE ONLY public.orders
 
 --
 -- TOC entry 3272 (class 2606 OID 24609)
--- Name: product product_category_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: product product_category_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.product
@@ -554,16 +412,15 @@ ALTER TABLE ONLY public.product
 
 --
 -- TOC entry 3274 (class 2606 OID 24637)
--- Name: shipment shipment_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: preprod_user
+-- Name: shipment shipment_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.shipment
     ADD CONSTRAINT shipment_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(order_id);
 
 
--- Completed on 2025-03-08 02:08:47 UTC
+-- Completed on 2025-03-08 02:31:29 UTC
 
 --
 -- PostgreSQL database dump complete
 --
-
